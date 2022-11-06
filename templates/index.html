@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+<div class="container">
+        <form action="/search" method="post">
+            <input id="search" name="search" class="form-control form-control-lg" type="text" placeholder="Search Movies and Shows" aria-label=".form-control-lg example" autocomplete="off">
+            <input class="btn btn-primary m-3" type="submit" value="Search" name="submit">
+        </form>
+</div>
+
+{% endblock %}
